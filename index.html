@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="The Wedding of Abi & Mufida" />
+  <meta property="og:description" content="Dengan penuh cinta kami mengundang Anda untuk hadir di hari istimewa kami." />
+  <meta property="og:image" content="https://mieptakh.github.io/undangam/foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" />
+  <meta property="og:url" content="https://mieptakh.github.io/undangan" />
+  <link rel="shortcut icon" href="foto/20250320_190104[1].png" type="image/x-icon">
+  <title>Abi & Mufida Wedding</title>
+
+  <!-- AOS CSS (pastikan sudah di head) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f1f5f9',   // soft blue-gray
+              100: '#dbe4ee',
+              200: '#b7cbe0',
+              300: '#8daecf',
+              400: '#5e8dbb',
+              500: '#3a6ea5',  // WARNA UTAMA
+              600: '#305c89',
+              700: '#27496f',
+              800: '#1f3a59',
+              900: '#182d45',
+              950: '#0e1a29',  // hampir navy gelap
+            },
+            secondary: {
+              50: '#f4f4f4',   // soft gray
+              100: '#e5e5e5',
+              200: '#cdcdcd',
+              300: '#adadad',
+              400: '#8e8e8e',
+              500: '#737373',  // WARNA NETRAL UTAMA
+              600: '#5c5c5c',
+              700: '#474747',
+              800: '#343434',
+              900: '#222222',
+              950: '#141414',  // hitam elegan
+            }
+          },
+          fontFamily: {
+            'great-vibes': ['"Great Vibes"', 'cursive'],
+            'open-sans': ['"Open Sans"', 'sans-serif']
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font: Great Vibes & Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Glide.js for gallery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" />
+
+  <!-- SweetAlert2 for notifications -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    html{
+       overflow-x: hidden;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f5f7f6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #9bb9b1;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #557d73;
+    }
+    
+    /* Section transitions */
+    section {
+      transition: background-color 0.5s ease;
+    }
+    
+    /* Modal animation */
+    .modal {
+      animation: fadeIn 0.3s ease-out;
+    }
+    
+    /* Floating animation for CTA button */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .floating-btn {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Custom underline */
+    .custom-underline {
+      position: relative;
+      display: inline-block;
+    }
+    .custom-underline:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+    .custom-underline:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+<body class="font-open-sans bg-primary-50 text-primary-900">
+
+<!-- Page 1: CTA -->
+<section 
+  id="welcome-section" 
+  class="h-screen bg-cover bg-center relative z-50 overflow-hidden" 
+  style="background-image: url('foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg');"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white px-4">
+    <h2 id="invitedName" class="text-2xl md:text-3xl mb-2 font-medium tracking-wider animate-fadeIn delay-200"></h2>
+    <h1 class="text-5xl md:text-6xl font-great-vibes mt-4 mb-6 animate-fadeIn delay-400">Abi & Mufida</h1>
+    <div class="w-24 h-1 bg-white my-4 animate-fadeIn delay-600"></div>
+    <p class="mt-2 text-lg max-w-md animate-fadeIn delay-800">
+      Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu di hari bahagia kami.
+    </p>
+    <button 
+      onclick="goToMain()" 
+      class="mt-8 bg-white text-primary-600 px-8 py-3 rounded-full shadow-lg hover:bg-primary-100 transition-all duration-300 font-medium animate-fadeIn delay-1000"
+    >
+      Buka Undangan
+    </button>
+    <div class="absolute bottom-8 animate-bounce-smooth">
+      <i class="fas fa-chevron-down text-2xl"></i>
+    </div>
+  </div>
+</section>
+
+<style>
+  body.block-scroll {
+    overflow: hidden;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  .animate-fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-400 { animation-delay: 0.4s; }
+  .delay-600 { animation-delay: 0.6s; }
+  .delay-800 { animation-delay: 0.8s; }
+  .delay-1000 { animation-delay: 1s; }
+
+  @keyframes bounceSmooth {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+  }
+  .animate-bounce-smooth {
+    animation: bounceSmooth 2s infinite;
+  }
+</style>
+
+<script>
+  const guestList = {
+    ayub: "Ayub",
+    exsa: "Exsa",
+    angga: "Angga",
+    jiko: "Jiko",
+    alumniips1: "Alumni IPS 1",
+    bogangpabean: "Bogang Pabean",
+    faisalpabean: "Faisal Pabean",
+    saon: "Saon",
+    ayun: "Ayun",  
+    paijo: "Paijo",
+    torik: "Torik",
+    cakyudi: "Cak Yudi",
+  };
+
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param)?.toLowerCase();
+  }
+
+  function getInvitedName() {
+    const guestKey = getQueryParam("to");
+    const guestName = guestList[guestKey];
+    const nameToShow = guestName ? guestName : "Undangan Online";
+    document.getElementById("invitedName").textContent = `Kepada Yth. ${nameToShow}`;
+  }
+
+  function goToMain() {
+    document.getElementById('welcome-section').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+    document.body.classList.remove('block-scroll');
+    scrollToSection('countdown');
+    startCountdown();
+  }
+
+  window.onload = function() {
+    getInvitedName();
+    document.body.classList.add('block-scroll'); // Cegah scroll saat welcome-section aktif
+  }
+</script>
+
+<main>
+  <section id="countdown" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-50 to-primary-100 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto">
+      <h1 class="text-4xl font-great-vibes mb-6 text-primary-700" data-aos="fade-down" data-aos-delay="100">The Wedding of</h1>
+      <div class="relative mb-8" data-aos="zoom-in" data-aos-delay="200">
+        <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" alt="Abi & Mufida" class="w-64 h-64 object-cover rounded-full shadow-lg mx-auto border-4 border-primary-200">
+        <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-100 px-6 py-2 rounded-full shadow-md" data-aos="fade-up" data-aos-delay="300">
+          <h2 class="text-xl font-semibold text-primary-800">Abi & Mufida</h2>
+        </div>
+      </div>
+      <p class="text-primary-600 mb-8" data-aos="fade-up" data-aos-delay="400">
+        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya." <br>(QS. Ar-Rum: 21)
+      </p>
+      <div id="timer" class="grid grid-cols-4 gap-2 max-w-xs mx-auto" data-aos="fade-up" data-aos-delay="500">
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="600">
+          <div id="days" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Hari</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="700">
+          <div id="hours" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Jam</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="800">
+          <div id="minutes" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Menit</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="900">
+          <div id="seconds" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Detik</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function startCountdown() {
+      const weddingDate = new Date('May 30, 2025 19:00:00').getTime();
+      
+      const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById('timer').innerHTML = '<div class="text-2xl text-primary-700">Acara Pernikahan Telah Berlangsung!</div>';
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      }, 1000);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdown();
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
+      }
+    });
+  </script>
+
+  <section id="couple" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto">
+
+      <h2 class="text-3xl font-great-vibes text-primary-700 mb-10" data-aos="fade-down" data-aos-delay="100">
+        Pasangan Pengantin
+      </h2>
+
+      <!-- Abi -->
+      <div class="mb-8" data-aos="fade-right" data-aos-delay="200">
+        <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mokhammad Abi Dullah Mukmin</p>
+        <p class="text-sm text-primary-500 italic">Putra dari</p>
+        <p class="text-base text-primary-600">Bapak Buamat & Ibu Puji Astutik</p>
+      </div>
+
+      <!-- Icon & -->
+      <div class="my-4" data-aos="zoom-in" data-aos-delay="300">
+        <span class="text-5xl text-primary-400 font-great-vibes">&</span>
+      </div>
+
+      <!-- Mufida -->
+      <div class="mb-8" data-aos="fade-left" data-aos-delay="400">
+        <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mufidatul Alawiyah</p>
+        <p class="text-sm text-primary-500 italic">Putri dari</p>
+        <p class="text-base text-primary-600">Bapak Jayadi (Alm) & Ibu Niswatin</p>
+      </div>
+
+      <!-- Narasi Undangan -->
+      <div class="mt-10 bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="500">
+        <p class="text-sm text-primary-600 leading-relaxed mb-4">
+          Dengan penuh syukur dan kasih, kami mengundang Anda untuk turut hadir dan menjadi saksi
+          atas awal perjalanan cinta kami.
+        </p>
+        <p class="text-sm text-primary-600 leading-relaxed mb-4">
+          Sebuah ikatan suci yang dipersatukan oleh cinta, doa, dan restu dari keluarga serta orang-orang terkasih.
+        </p>
+        <p class="text-base text-primary-700 font-semibold italic">Abi & Mufida</p>
+      </div>
+
+    </div>
+  </section>
+
+ <section id="love-story" class="bg-primary-100 py-20 px-6 md:px-12">
+  <div class="text-center mb-16" data-aos="fade-up">
+    <h2 class="text-4xl font-serif font-semibold text-primary-700"><i class="fas fa-heart mr-2 text-red-500"></i>Love Story</h2>
+    <p class="text-gray-600 mt-3">Perjalanan cinta singkat kami yang penuh makna</p>
+  </div>
+
+  <div class="space-y-16 max-w-3xl mx-auto relative before:absolute before:left-1/2 before:top-0 before:h-full before:w-1 before:bg-primary-300 before:-translate-x-1/2">
+
+    <!-- 2019 -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 group" data-aos="fade-right">
+      <div class="text-5xl font-bold text-primary-600 md:w-1/4">2019</div>
+      <div class="bg-white shadow-md p-6 rounded-2xl transition-all group-hover:scale-[1.02] group-hover:shadow-lg w-full md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-handshake mr-2 text-primary-500"></i>First Meet</h3>
+        <p class="text-gray-600">Bertemu di organisasi Pramuka. Dia si jahil yang bikin saya gregetan.</p>
+      </div>
+    </div>
+
+    <!-- 2020 -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 group" data-aos="fade-left">
+      <div class="text-5xl font-bold text-primary-600 md:w-1/4">2020</div>
+      <div class="bg-white shadow-md p-6 rounded-2xl transition-all group-hover:scale-[1.02] group-hover:shadow-lg w-full md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-comments mr-2 text-primary-500"></i>Relationship</h3>
+        <p class="text-gray-600">Akhir 2019 kami mulai dekat, curhat, tapi harus berakhir setelah kelulusan.</p>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 group" data-aos="fade-right">
+      <div class="text-5xl font-bold text-primary-600 md:w-1/4">2024</div>
+      <div class="bg-white shadow-md p-6 rounded-2xl transition-all group-hover:scale-[1.02] group-hover:shadow-lg w-full md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-ring mr-2 text-yellow-500"></i>Engagement</h3>
+        <p class="text-gray-600">Dia datang kembali dengan keseriusan dan niat untuk menikah.</p>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center gap-6 group" data-aos="fade-left">
+      <div class="text-5xl font-bold text-primary-600 md:w-1/4">2025</div>
+      <div class="bg-white shadow-md p-6 rounded-2xl transition-all group-hover:scale-[1.02] group-hover:shadow-lg w-full md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2"><i class="fas fa-heart mr-2 text-pink-500"></i>Married</h3>
+        <p class="text-gray-600">Akhirnya, kami bersatu di pelaminan, penuh cinta dan harapan.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="schedule" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16">
+    <div class="max-w-md mx-auto">
+      <h2 class="text-3xl font-great-vibes mb-8 text-primary-700" data-aos="fade-up">Acara Pernikahan</h2>
+
+      <div class="space-y-8">
+        
+        <!-- Akad Nikah -->
+        <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-right" data-aos-delay="100">
+          <div class="absolute top-0 left-0 w-full h-1 bg-primary-400"></div>
+          <h3 class="text-xl font-semibold text-primary-800 mb-4">
+            <i class="fas fa-ring text-primary-500 mr-2"></i>Akad Nikah
+          </h3>
+          <p class="text-primary-600 mb-1">
+            <i class="fas fa-calendar-alt mr-2"></i>Jum'at, 30 Mei 2025
+          </p>
+          <p class="text-primary-600 mb-3">
+            <i class="fas fa-clock mr-2"></i>19:00  WIB
+          </p>
+          <p class="text-sm text-primary-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09, Keboguyang, Jabon, Sidoarjo
+          </p>
+          <a 
+            href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
+            target="_blank" 
+            class="inline-block px-4 py-2 bg-primary-600 text-white rounded-full text-sm hover:bg-primary-700 transition-colors duration-300"
+          >
+            <i class="fas fa-map mr-2"></i>Lihat Lokasi Akad
+          </a>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-left" data-aos-delay="300">
+          <div class="absolute top-0 left-0 w-full h-1 bg-secondary-400"></div>
+          <h3 class="text-xl font-semibold text-primary-800 mb-4">
+            <i class="fas fa-glass-cheers text-secondary-500 mr-2"></i>Resepsi Pernikahan
+          </h3>
+          <p class="text-primary-600 mb-1">
+            <i class="fas fa-calendar-alt mr-2"></i>Sabtu, 31 Mei 2025
+          </p>
+          <p class="text-primary-600 mb-3">
+            <i class="fas fa-clock mr-2"></i>Bebas
+          </p>
+          <p class="text-sm text-primary-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09 keboguyang Jabon Sidoarjo 
+          </p>
+          <a 
+            href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
+            target="_blank" 
+            class="inline-block px-4 py-2 bg-secondary-500 text-white rounded-full text-sm hover:bg-secondary-600 transition-colors duration-300"
+          >
+            <i class="fas fa-map mr-2"></i>Lihat Lokasi Resepsi
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 px-4 py-16">
+    <div class="max-w-md mx-auto w-full">
+      <h2 class="text-3xl font-great-vibes mb-8 text-center text-primary-700" data-aos="fade-up">Galeri Kami</h2>
+
+      <div class="glide" data-aos="zoom-in" data-aos-delay="200">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 1" />
+            </li>
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_a266ac1a.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 2" />
+            </li>
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.04_727355d4.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 3" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0" aria-label="Slide 1"></button>
+          <button class="glide__bullet" data-glide-dir="=1" aria-label="Slide 2"></button>
+          <button class="glide__bullet" data-glide-dir="=2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
+        <p class="text-primary-600">Bagikan momen bahagia kami dengan tagar</p>
+        <p class="font-semibold text-primary-800 mt-2">#AbiMufida2025</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Pastikan glide kontainer full width di hp kecil */
+    .glide {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Glide slides responsive */
+    .glide__slide img {
+      width: 100%;
+      height: auto;
+      max-height: 16rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    /* Glide arrows */
+    .glide__arrows {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+
+    .glide__arrow {
+      background: #3a6ea5; /* primary-500 navy kalem */
+      color: white;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1.25rem;
+    }
+
+    .glide__arrow:hover,
+    .glide__arrow:focus {
+      background: #27496f; /* primary-700 navy gelap */
+      outline: none;
+    }
+
+    /* Glide bullets */
+    .glide__bullets {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .glide__bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #b8c7da; /* primary-200 (abu kebiruan terang) */
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
+    }
+
+    .glide__bullet:hover,
+    .glide__bullet:focus {
+      background-color: #1f3a60; /* primary-800 (navy gelap banget) */
+      outline: none;
+    }
+
+    .glide__bullet--active {
+      background-color: #3a6ea5; /* primary-500 */
+    }
+
+    /* Responsive tweaks for small screens */
+    @media (max-width: 480px) {
+      .glide__slide img {
+        max-height: 12rem;
+      }
+
+      .glide__arrow {
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+      }
+
+      .glide__bullets {
+        gap: 0.4rem;
+      }
+
+      .glide__bullet {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  </style>
+
+  <script>
+    // Inisialisasi Glide.js
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof Glide === 'function') {
+        new Glide('.glide', {
+          type: 'carousel',
+          startAt: 0,
+          perView: 1,
+          gap: 16,
+          animationDuration: 400,
+          animationTimingFunc: 'ease-in-out',
+          hoverpause: true,
+          keyboard: true,
+        }).mount();
+      }
+    });
+  </script>
+
+  <!-- Gift -->
+  <section id="gift" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+      <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4" data-aos="fade-down" data-aos-delay="200">
+        <i class="fas fa-gift text-2xl text-primary-600"></i>
+      </div>
+      <h2 class="text-2xl font-semibold text-primary-700 mb-6" data-aos="fade-down" data-aos-delay="300">Kirim Hadiah</h2>
+
+      <div class="space-y-4 text-left" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-primary-50 p-4 rounded-lg" data-aos="fade-right" data-aos-delay="500">
+          <h3 class="font-medium text-primary-700 mb-1">Bank BCA</h3>
+          <p class="text-primary-600">3151428001</p>
+          <p class="text-sm text-primary-500">a.n Mufidatul Alawiyah</p>
+        </div>
+
+      </div>
+
+      <button onclick="copyRek()" class="mt-6 bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors duration-300 flex items-center mx-auto" data-aos="zoom-in" data-aos-delay="700">
+        <i class="far fa-copy mr-2"></i> Salin Nomor Rekening
+      </button>
+
+      <p class="mt-6 text-sm text-primary-500" data-aos="fade-up" data-aos-delay="800">
+        Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika ingin memberikan hadiah, kami dengan senang hati menerimanya.
+      </p>
+    </div>
+  </section>
+
+<!-- Closing -->
+<section id="closing" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-100 to-primary-200 text-center px-4 py-16" data-aos="fade-up">
+  <div class="max-w-md mx-auto" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-4xl font-great-vibes mb-6 text-primary-700" data-aos="fade-down" data-aos-delay="200">Terima Kasih</h2>
+    <div class="w-24 h-1 bg-primary-400 mx-auto mb-6" data-aos="fade-down" data-aos-delay="300"></div>
+
+    <p class="text-primary-600 mb-6" data-aos="fade-up" data-aos-delay="400">
+      Atas kehadiran dan doa restunya, kami mengucapkan terima kasih yang sebesar-besarnya.
+    </p>
+
+    <div class="bg-white bg-opacity-80 p-6 rounded-lg shadow-sm backdrop-blur-sm" data-aos="zoom-in" data-aos-delay="500">
+      <p class="text-primary-700 mb-4">Jangan lupa tag kami di Instagram:</p>
+      <div class="flex justify-center space-x-4 mb-6">
+        <a href="https://instagram.com/massjoy14" class="text-primary-600 hover:text-primary-800 transition-colors duration-300" data-aos="fade-right" data-aos-delay="600">
+          <i class="fab fa-instagram text-2xl mr-1"></i> @massjoy14
+        </a>
+        <a href="https://instagram.com/mufidalwiyah_" class="text-primary-600 hover:text-primary-800 transition-colors duration-300" data-aos="fade-left" data-aos-delay="700">
+          <i class="fab fa-instagram text-2xl mr-1"></i> @mufidalwiyah_
+        </a>
+      </div>
+      <p class="text-sm text-primary-500" data-aos="fade-up" data-aos-delay="800">Akan kami repost tentunya!</p>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-primary-300" data-aos="fade-up" data-aos-delay="900">
+      <p class="text-xs text-primary-500">
+        Powered by <a href="https://instagram.com/mh.teams" class="text-primary-600 hover:underline"> @mh.teams</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Bottom Navigation -->
+<nav id="bottomNav" class="bottom-nav fixed bottom-0 w-full flex justify-around bg-white shadow-lg py-3 z-20 text-primary-600 text-2xl">
+  <button onclick="scrollToSection('countdown')" class="nav-btn flex flex-col items-center" data-target="countdown" aria-label="Countdown">
+    <i class="fas fa-hourglass-start"></i>
+  </button>
+  <button onclick="scrollToSection('couple')" class="nav-btn flex flex-col items-center" data-target="couple" aria-label="Pasangan">
+    <i class="fas fa-heart"></i>
+  </button>
+  <button onclick="scrollToSection('schedule')" class="nav-btn flex flex-col items-center" data-target="schedule" aria-label="Acara">
+    <i class="fas fa-calendar-alt"></i>
+  </button>
+  <button onclick="scrollToSection('gallery')" class="nav-btn flex flex-col items-center" data-target="gallery" aria-label="Galeri">
+    <i class="fas fa-images"></i>
+  </button>
+  <button onclick="scrollToSection('gift')" class="nav-btn flex flex-col items-center" data-target="gift" aria-label="Hadiah">
+    <i class="fas fa-gift"></i>
+  </button>
+</nav>
+
+<style>
+  .bottom-nav {
+    background: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem 0;
+    z-index: 20;
+    color: #3a6ea5; /* primary-500 (navy lembut) */
+  }
+
+  .nav-btn {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: 
+      background-color 0.3s ease, 
+      color 0.3s ease, 
+      transform 0.15s ease;
+    cursor: pointer;
+    user-select: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-btn i {
+    transition: color 0.3s ease;
+  }
+
+  /* Hover & focus state */
+  .nav-btn:hover,
+  .nav-btn:focus {
+    background-color: #dbe4ee; /* primary-100 */
+    color: #27496f; /* primary-700 */
+    outline: none;
+  }
+
+  /* Active state scale */
+  .nav-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Aktif aktif */
+  .nav-btn.active {
+    background-color: #27496f; /* primary-700 */
+    color: white;
+    box-shadow: 0 4px 8px rgba(39, 73, 111, 0.4);
+  }
+
+  .nav-btn.active i {
+    color: white;
+  }
+</style>
+
+<script>
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if(section) {
+      section.scrollIntoView({behavior: 'smooth'});
+      setActiveButton(id);
+    }
+  }
+
+  window.addEventListener('click', () => {
+  document.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
+
+  function setActiveButton(id) {
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.target === id);
+    });
+  }
+
+  // Update active button on scroll
+  window.addEventListener('scroll', () => {
+    const sections = ['countdown', 'couple', 'schedule', 'gallery', 'gift'];
+    let current = sections[0];
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    sections.forEach(id => {
+      const section = document.getElementById(id);
+      if(section && scrollY >= section.offsetTop - window.innerHeight / 3) {
+        current = id;
+      }
+    });
+    setActiveButton(current);
+  });
+
+  // Set default active on load
+  document.addEventListener('DOMContentLoaded', () => {
+    setActiveButton('countdown');
+  });
+</script>
+
+<!-- Glide.js Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+  // Initialize Glide.js for gallery
+  document.addEventListener('DOMContentLoaded', function() {
+    new Glide('.glide', {
+      type: 'carousel',
+      perView: 1,
+      focusAt: 'center',
+      gap: 20,
+      autoplay: 3000,
+      hoverpause: true
+    }).mount();
+  });
+  
+  // Go to main content
+  function goToMain() {
+    document.getElementById('welcome-section').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+    scrollToSection('countdown');
+    startCountdown();
+  }
+  
+  // Copy bank account
+  function copyRek() {
+    const rekening = '3151428001 (BCA a.n Mufidatul Alawiyah)';
+    navigator.clipboard.writeText(rekening).then(() => {
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Nomor rekening berhasil disalin',
+        showConfirmButton: false,
+        timer: 1500,
+        toast: true
+      });
+    });
+  }
+
+</script>
+
+<!-- AOS JS (letakkan sebelum penutup body) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 800,      // durasi animasi 800ms
+      once: true,         // animasi hanya sekali saat scroll (tidak berulang)
+      easing: 'ease-in-out', // efek easing smooth
+      mirror: false       // tidak animasi saat scroll ke atas
+    });
+  });
+</script>
+
+<div style="position: absolute; width: 1px; height: 1px; overflow: hidden; pointer-events: none; top: 0; left: 0; z-index: -9999;">
+  <iframe 
+    id="ytplayer"
+    src="https://www.youtube.com/embed/DjMu_4O_EYk?autoplay=1&controls=0&mute=0&loop=1&playlist=DjMu_4O_EYk&enablejsapi=1"
+    frameborder="0" 
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    style="width:1px; height:1px;"
+  ></iframe>
+</div>
+
+<script>
+  // Setup API ready and unmute
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {
+      events: {
+        'onReady': function(event) {
+          event.target.unMute();  // Pastikan suara nyala
+          event.target.playVideo();
+        }
+      }
+    });
+  }
+
+  // Load YouTube IFrame API script
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+
+</body>
+</html>
